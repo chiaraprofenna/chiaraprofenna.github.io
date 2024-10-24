@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #fce4ec;
+            background-color: #4ca4b4;
             color: #5d4037;
             margin: 0;
             padding: 0;
@@ -23,17 +23,20 @@
             padding: 20px;
             max-width: 600px;
             text-align: center;
+            width: 90%;
+            margin: 20px;
         }
         h1 {
-            color: #ec407a;
+            color: #257484;
             font-size: 2.5em;
+            margin-bottom: 20px;
         }
         .profile-photo {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             margin: 20px 0;
-            border: 5px solid #ec407a;
+            border: 5px solid #257484;
         }
         p {
             font-size: 1.2em;
@@ -41,7 +44,7 @@
         }
         .links a {
             display: block;
-            background-color: #ec407a;
+            background-color: #257484;
             color: #fff;
             text-decoration: none;
             padding: 10px;
@@ -50,7 +53,47 @@
             transition: background-color 0.3s;
         }
         .links a:hover {
-            background-color: #f06292;
+            background-color: #4ca4b4;
+        }
+
+        /* Desktop adjustments */
+        @media (min-width: 768px) {
+            .container {
+                padding: 40px;
+                max-width: 800px;
+            }
+            h1 {
+                font-size: 3em;
+            }
+            p {
+                font-size: 1.4em;
+            }
+            .profile-photo {
+                width: 200px;
+                height: 200px;
+            }
+            .links a {
+                font-size: 1.2em;
+                padding: 15px;
+            }
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.1em;
+            }
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+            .links a {
+                font-size: 1em;
+                padding: 10px;
+            }
         }
     </style>
 </head>
