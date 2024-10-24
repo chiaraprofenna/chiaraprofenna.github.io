@@ -16,7 +16,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Changed from height to min-height */
+            overflow-x: hidden; /* Prevents horizontal scrolling */
         }
         .container {
             background-color: #fff;
@@ -82,6 +83,10 @@
 
         /* Mobile adjustments */
         @media (max-width: 480px) {
+            body {
+                flex-direction: column; /* Stack content vertically */
+                padding: 10px; /* Add some padding */
+            }
             h1 {
                 font-size: 2em;
             }
@@ -104,7 +109,7 @@
     <div class="container">
         <h1>Chiara Profenna</h1>
         <img src="https://media.licdn.com/dms/image/v2/D5603AQGskMEBZdIRJQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719690877500?e=1735171200&v=beta&t=3_qrl70LPS1g2znUWReOTImJWbjW_6M7H4JFceSWXcU" alt="Photo of Chiara Profenna" class="profile-photo">
-        <p>Hello! I'm Chiara Profenna, a reporting fellow at The Oregonian/OregonLive, where I cover religion, faith, and cultural connections. 
+        <p>Hello! I'm Chiara Profenna, a reporting fellow at The Oregonian/OregonLive, specializing in religion, faith, and cultural connections. 
             Through the Advance Local fellowship program, I’m pursuing an M.S. in Communications from S.I. Newhouse School of Public Communications at Syracuse University.
             In my current position, I write and pitch original feature content centered around faith and cultural communities in Oregon. 
             I also produce written and visual (photo/video) content for The Oregonian/OregonLive and their social channels.</p>
